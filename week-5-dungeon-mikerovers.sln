@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week-5-dungeon-mikerovers", "week-5-dungeon-mikerovers\week-5-dungeon-mikerovers.csproj", "{808D8FD6-5F41-4430-A5DF-360A9D567575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "week-5-dungeon-tests", "week-5-dungeon-tests\week-5-dungeon-tests.csproj", "{190541EE-EB11-4F04-8F95-0B22BD78E8F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{808D8FD6-5F41-4430-A5DF-360A9D567575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{808D8FD6-5F41-4430-A5DF-360A9D567575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{808D8FD6-5F41-4430-A5DF-360A9D567575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{808D8FD6-5F41-4430-A5DF-360A9D567575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{190541EE-EB11-4F04-8F95-0B22BD78E8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{190541EE-EB11-4F04-8F95-0B22BD78E8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{190541EE-EB11-4F04-8F95-0B22BD78E8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{190541EE-EB11-4F04-8F95-0B22BD78E8F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
