@@ -25,16 +25,6 @@ namespace week_5_dungeon_mikerovers
                 subsets[graphVertex].rank = 0;
             }
             
-//            Dictionary<Vertex, HashSet<Vertex>> membershipMap = new Dictionary<Vertex, HashSet<Vertex>>();
-//            
-//            
-//            foreach (Vertex graphVertex in graph.Vertices)
-//            {
-//                HashSet<Vertex> set = new HashSet<Vertex>();
-//                set.Add(graphVertex);
-//                membershipMap.Add(graphVertex, set);
-//            }
-            
             Queue<Edge> edgeQueue = new Queue<Edge>(graph.Edges.OrderBy(edge => edge.Weight));
 
             while (edgeQueue.Count > 0)
@@ -49,94 +39,10 @@ namespace week_5_dungeon_mikerovers
                     result.Add(edge);
                     Union(subsets, x, y);
                 }
-
-//                if (!IsSamePart(edge.Node1, edge.Node2, membershipMap))
-//                {
-//                    Union(edge.GetFromVertex(), edge.GetToVertex(), membershipMap);
-//                    result.Add(edge);
-//                }
             }
 
             return result;
-
-//            HashSet<Edge> result = new HashSet<Edge>();
-//            HashSet<Vertex> notIncluded = new HashSet<Vertex>(graph.Vertices);
-//            Queue<Edge> edgesAvailable = new Queue<Edge>();
-//
-//            notIncluded.Remove(start);        
-//            Vertex currentVertex = start;
-//
-//            while (notIncluded.Count > 0)
-//            {
-//                
-//            }
-//            
-//            while (notIncluded.Count > 0)
-//            {
-//                foreach (Edge edge in currentVertex.Edges)
-//                {
-//                    if (notIncluded.Contains(edge.GetToVertex()))
-//                    {
-//                        edgesAvailable.Enqueue(edge); 
-//                    }
-//                }
-//
-//                edgesAvailable = new Queue<Edge>(edgesAvailable.OrderBy(edge => edge.Weight));
-//                Edge min = edgesAvailable.Dequeue();
-//                result.Add(min);
-//
-//                currentVertex = min.GetToVertex();
-//                notIncluded.Remove(currentVertex);
-//            }
-//
-//            return result;
-
-//            Queue<Edge> edges = new Queue<Edge>(graph.Edges.OrderBy(edge => edge.Weight));
-//            HashSet<Edge> solved = new HashSet<Edge>();
-//
-//            foreach (Edge edge in edges)
-//            {
-//                Vertex v1 = edge.Node1;
-//                Vertex v2 = edge.Node2;
-//
-//                if (v1 != v2)
-//                {
-//                    v1.Join(v2);
-//                    solved.Add(edge);
-//                }
-//            }
-//
-//            return solved;
         }
-
-//        private bool IsSamePart(Vertex v1, Vertex v2, Dictionary<Vertex, HashSet<Vertex>> membershipMap)
-//        {
-//            var m1 = membershipMap[v1];
-//            var m2 = membershipMap[v2];
-//            var res = (m1.Equals(m2));
-//
-//            return res;
-//        }
-//
-//        private void Union(Vertex v1, Vertex v2, Dictionary<Vertex, HashSet<Vertex>> membershipMap)
-//        {
-//            HashSet<Vertex> firstSet = membershipMap[v1];
-//            HashSet<Vertex> secondSet = membershipMap[v2];
-//
-//            if (secondSet.Count > firstSet.Count)
-//            {
-//                HashSet<Vertex> tempSet = firstSet;
-//                firstSet = secondSet;
-//                secondSet = tempSet;
-//            }
-//
-//            foreach (Vertex vertex in secondSet)
-//            {
-//                membershipMap[vertex] = secondSet;
-//            }
-//            
-//            firstSet.UnionWith(secondSet);
-//        }
         
         internal class Subset
         {
