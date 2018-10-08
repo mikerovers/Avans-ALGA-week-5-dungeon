@@ -6,11 +6,11 @@ namespace week_5_dungeon_mikerovers
     public class Graph
     {
         private GraphBuilder _graphBuilder;
-        private int _rowLength;
+        public int _rowLength;
         private HashSet<Vertex> _vertices;
-        private Vertex[,] _drawGrid;
-        public Vertex StartPoint { get; private set; }
-        public Vertex EndPoint { get; private set; }
+        public Vertex[,] _drawGrid;
+        public Vertex StartPoint { get; set; }
+        public Vertex EndPoint { get; set; }
         public HashSet<Edge> Edges { get; private set; }
 
         public Graph(int size = 4)
@@ -115,14 +115,6 @@ namespace week_5_dungeon_mikerovers
             }
             
             System.Console.WriteLine("\n");
-        }
-
-        public int GetLengthToEnd()
-        {
-            var algorithm = new BreadthFirstSearch();
-            var result = algorithm.Execute(this, StartPoint, EndPoint);
-
-            return result.Count;
         }
     }
 }

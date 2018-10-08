@@ -15,6 +15,12 @@ namespace week_5_dungeon_mikerovers
 
             while (true)
             {
+                System.Console.WriteLine("S = Room: Startpunt");
+                System.Console.WriteLine("E = Room: Eindpunt");
+                System.Console.WriteLine("X = Room: Niet bezocht");
+                System.Console.WriteLine("* = Room: Bezocht");
+                System.Console.WriteLine("~ = Hallway: Ingestort");
+                System.Console.WriteLine("0 = Hallway: Level tegenstander (cost)");
                 graph.PrintGraph();
                 System.Console.WriteLine("\n");
                 System.Console.WriteLine("Acties: talisman, handgranaat, kompas");

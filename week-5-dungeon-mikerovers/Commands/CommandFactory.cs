@@ -11,7 +11,11 @@ namespace week_5_dungeon_mikerovers.Commands
                 case "talisman":
                     return new TalismanCommand();
                 case "kompas":
-                    return new CompassCommand();;
+                    return new CompassCommand();
+                case "start":
+                    return new ChangeStartCommand();
+                case "end":
+                    return new ChangeEndCommand();
                 default:
                     return new NullCommand();
             }
