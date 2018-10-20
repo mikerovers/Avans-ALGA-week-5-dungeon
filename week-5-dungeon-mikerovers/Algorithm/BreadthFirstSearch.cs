@@ -9,55 +9,32 @@ namespace week_5_dungeon_mikerovers
         public HashSet<Vertex> Execute(Graph graph, Vertex start, Vertex end)
         {
             Queue<Vertex> queue = new Queue<Vertex>();
-            Dictionary<Vertex, Vertex> visited = new Dictionary<Vertex, Vertex>();
+            HashSet<Vertex> visited = new HashSet<Vertex>();
             
             queue.Enqueue(start);
 
-            void Loop()
+            while (queue.Count > 0)
             {
-                while (queue.Count > 0)
-                {
-                    Vertex vertex = queue.Dequeue();
+                Vertex vertex = queue.Dequeue();
+                visited.Add(vertex);
     
-                    foreach (Edge edge in vertex.Edges)
-                    {
-                        var other = edge.Other(vertex);
-                            
-                        if (other == end)
-                        {
-                            visited[other] = vertex;
-                            
-                            return;
-                        }
+                foreach (Edge edge in vertex.Edges)
+                {
+                    var other = edge.Other(vertex);
                     
-                        if (edge.Walkable && !queue.Contains(other) && !visited.ContainsKey(other))
-                        {
-                            visited[other] = vertex;
-                            queue.Enqueue(other);
-                        }
+                    if (edge.Walkable && !queue.Contains(other) && !visited.Contains(other))
+                    {
+                        queue.Enqueue(other);
+                    }
+
+                    if (other == end)
+                    {
+                        return visited;
                     }
                 }
             }
-            
-            Loop();            
-            
-            Func<Vertex, HashSet<Vertex>> shortestPath = v =>
-            {
-                var path = new HashSet<Vertex>();
 
-                var current = v;
-                while (!current.Equals(start)) {
-                    path.Add(current);
-                    current = visited[current];
-                };
-
-                path.Add(start);
-
-                return path;
-            };
-
-            
-            return shortestPath(end);
+            return visited;
         }
     }
 }
