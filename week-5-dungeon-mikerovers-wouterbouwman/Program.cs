@@ -1,4 +1,6 @@
-﻿using week_5_dungeon_mikerovers_wouterbouwman.Commands;
+﻿using System;
+using System.Net.Mime;
+using week_5_dungeon_mikerovers_wouterbouwman.Commands;
 
 namespace week_5_dungeon_mikerovers_wouterbouwman
 {
@@ -7,7 +9,18 @@ namespace week_5_dungeon_mikerovers_wouterbouwman
         static void Main(string[] args)
         {
             CommandFactory commandFactory = new CommandFactory();
-            Graph graph = new Graph(4);
+            System.Console.WriteLine("Enter your desired dungeon size:");
+            
+            string sizeInput = System.Console.ReadLine();
+            int number;
+
+            if (!Int32.TryParse(sizeInput, out number))
+            {
+                System.Console.WriteLine("The entered size is not valid.");
+                Environment.Exit(1);
+            }
+
+            Graph graph = new Graph(number);
             System.Console.Write("\n");;
 
             while (true)
