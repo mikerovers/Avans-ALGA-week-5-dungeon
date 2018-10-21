@@ -52,6 +52,7 @@ namespace week_5_dungeon_mikerovers
                 };
 
                 path.Add(start);
+                path.Remove(end);
 
                 return path;
             };
