@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
-using week_5_dungeon_mikerovers.Exception;
+using week_5_dungeon_mikerovers_wouterbouwman.Exception;
 
-namespace week_5_dungeon_mikerovers
+namespace week_5_dungeon_mikerovers_wouterbouwman
 {
     public class GraphBuilder
     {

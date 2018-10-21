@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using week_5_dungeon_mikerovers.Algorithm;
+using week_5_dungeon_mikerovers_wouterbouwman.Algorithm;
 
-namespace week_5_dungeon_mikerovers.Commands
+namespace week_5_dungeon_mikerovers_wouterbouwman.Commands
 {
     public class GrenadeCommand : ICommand
     {

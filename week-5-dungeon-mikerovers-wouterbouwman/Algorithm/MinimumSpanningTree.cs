@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace week_5_dungeon_mikerovers.Algorithm
+namespace week_5_dungeon_mikerovers_wouterbouwman.Algorithm
 {
     public class MinimumSpanningTree
     {

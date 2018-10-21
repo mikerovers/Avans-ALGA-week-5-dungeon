@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 
-namespace week_5_dungeon_mikerovers
+namespace week_5_dungeon_mikerovers_wouterbouwman
 {
     public class Graph
     {
-        private GraphBuilder _graphBuilder;
+         GraphBuilder _graphBuilder;
         public int _rowLength;
         private HashSet<Vertex> _vertices;
         public Vertex[,] _drawGrid;

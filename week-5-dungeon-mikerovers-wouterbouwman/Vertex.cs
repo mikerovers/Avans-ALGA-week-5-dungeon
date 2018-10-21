@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace week_5_dungeon_mikerovers
+namespace week_5_dungeon_mikerovers_wouterbouwman
 {
     public class Vertex
     {

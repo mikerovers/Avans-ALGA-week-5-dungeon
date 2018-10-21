@@ -1,4 +1,4 @@
-namespace week_5_dungeon_mikerovers.Exception
+namespace week_5_dungeon_mikerovers_wouterbouwman.Exception
 {
     public class GridSizeException : System.Exception
     {

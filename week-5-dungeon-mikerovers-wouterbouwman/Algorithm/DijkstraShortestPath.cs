@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace week_5_dungeon_mikerovers.Algorithm
+namespace week_5_dungeon_mikerovers_wouterbouwman.Algorithm
 {
     public class DijkstraShortestPath
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using week_5_dungeon_mikerovers;
-using week_5_dungeon_mikerovers.Exception;
+using week_5_dungeon_mikerovers_wouterbouwman;
+using week_5_dungeon_mikerovers_wouterbouwman.Exception;
 using Xunit;
 
 namespace week_5_dungeon_tests

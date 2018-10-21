@@ -1,4 +1,4 @@
-namespace week_5_dungeon_mikerovers.Commands
+namespace week_5_dungeon_mikerovers_wouterbouwman.Commands
 {
     public class NullCommand : ICommand
     {
