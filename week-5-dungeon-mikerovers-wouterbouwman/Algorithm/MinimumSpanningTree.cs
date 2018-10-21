@@ -1,11 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Runtime.InteropServices;
-using System.Text.RegularExpressions;
-using System.Threading;
 
-namespace week_5_dungeon_mikerovers
+namespace week_5_dungeon_mikerovers.Algorithm
 {
     public class MinimumSpanningTree
     {

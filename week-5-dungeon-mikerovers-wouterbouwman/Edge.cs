@@ -1,5 +1,3 @@
-using System;
-
 namespace week_5_dungeon_mikerovers
 {
     public class Edge

@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
-namespace week_5_dungeon_mikerovers
+namespace week_5_dungeon_mikerovers.Algorithm
 {
     public class BreadthFirstSearch
     {                

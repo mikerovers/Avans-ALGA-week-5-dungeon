@@ -8,7 +8,7 @@ namespace week_5_dungeon_tests
     public class GraphBuilderTest
     {
         private GraphBuilder _graphBuilder;
-
+        
         public GraphBuilderTest()
         {
             _graphBuilder = new GraphBuilder();

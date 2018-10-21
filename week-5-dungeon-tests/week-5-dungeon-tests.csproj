@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\week-5-dungeon-mikerovers\week-5-dungeon-mikerovers.csproj" />
+      <ProjectReference Include="..\week-5-dungeon-mikerovers-wouterbouwman\week-5-dungeon-mikerovers-wouterbouwman.csproj" />
     </ItemGroup>
 
 </Project>

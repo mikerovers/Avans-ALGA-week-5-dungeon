@@ -1,9 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Net;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Runtime.Serialization.Json;
-using System.Security;
 using week_5_dungeon_mikerovers.Exception;
 
 namespace week_5_dungeon_mikerovers
